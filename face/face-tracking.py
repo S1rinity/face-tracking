@@ -21,7 +21,7 @@ face_mesh = mp_face_mesh.FaceMesh(
 # 2. Setup Webcam
 cap = cv2.VideoCapture(0)  # '0' is usually the default webcam
 
-print("Press 'Esc' to quit.")
+# print("Press 'Esc' to quit.")
 
 while cap.isOpened():
     success, image = cap.read()
@@ -51,7 +51,7 @@ while cap.isOpened():
                 landmark_drawing_spec=None,
                 connection_drawing_spec=contour_style
             )
-            # Option B: Draw the outer contours (The "Shape" - Eyes, Lips, Face Oval)
+             #Option B: Draw the outer contours (The "Shape" - Eyes, Lips, Face Oval)
         #     mp_drawing.draw_landmarks(
         #         image=image,
         #         landmark_list=face_landmarks,
@@ -74,7 +74,7 @@ while cap.isOpened():
         #     connection_drawing_spec=eyes_and_mouth
         # )
     # 6. Show the result
-    cv2.imshow('Face Shape Tracker', image)
+    cv2.imshow('Tracker', image)
 
     # Exit if 'Esc' is pressed
     if cv2.waitKey(5) & 0xFF == 27:
