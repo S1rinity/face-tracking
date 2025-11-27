@@ -19,7 +19,7 @@ face_mesh = mp_face_mesh.FaceMesh(
 )
 
 # 2. Setup Webcam
-cap = cv2.VideoCapture(0)  # '0' is usually the default webcam
+cap = cv2.VideoCapture(1)  # '0' is usually the default webcam
 
 # print("Press 'Esc' to quit.")
 
